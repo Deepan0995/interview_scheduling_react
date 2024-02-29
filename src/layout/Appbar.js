@@ -61,7 +61,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "flex-end",
   padding: theme.spacing(0, 1),
-  
+
   ...theme.mixins.toolbar,
 }));
 const AppBar = styled(MuiAppBar, {
@@ -98,14 +98,13 @@ const Drawer = styled(MuiDrawer, {
     "& .MuiDrawer-paper": closedMixin(theme),
   }),
 }));
-export default function Appbar() 
-{
+export default function Appbar() {
   const [searchInput, setSearchInput] = React.useState("");
   const [iconclick, setIconclick] = React.useState(false);
   const handleSearchInputChange = (event) => {
     setSearchInput(event.target.value);
   };
-  
+
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -132,7 +131,7 @@ export default function Appbar()
             justifyContent={"space-between"}
             alignItems={"center"}
           >
-            <Grid item >
+            <Grid item>
               <Box sx={{ background: "#888888", padding: "15px", ml: 10 }}>
                 <Typography>LOGO</Typography>
               </Box>

@@ -174,7 +174,7 @@ const BasicTabs = () => {
       </Box>
       <CustomTabPanel value={value} index={0}>
         <Grid container display={"flex"} justifyContent={"space-between"}>
-          <Grid item lg={10} display={"flex"}>
+          <Grid item xs={12} lg={10} display={"flex"}>
             <Grid item lg={0.5}>
               <CreateOutlinedIcon sx={{ mt: 1 }} style={{ color: "#6A6A6A" }} />
             </Grid>
@@ -442,7 +442,7 @@ const BasicTabs = () => {
 
       <CustomTabPanel value={value} index={1}>
         <Grid container display={"flex"} justifyContent={"space-between"}>
-          <Grid item lg={10} display={"flex"}>
+          <Grid item  xs={12} lg={10} display={"flex"}>
             <Grid item lg={0.5}>
               <CreateOutlinedIcon sx={{ mt: 1 }} style={{ color: "#6A6A6A" }} />
             </Grid>
@@ -705,11 +705,11 @@ const BasicTabs = () => {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
         <Grid container display={"flex"} justifyContent={"space-between"}>
-          <Grid item lg={10} display={"flex"}>
-            <Grid item lg={0.5}>
+          <Grid item xs={12} lg={10} display={"flex"}>
+            <Grid item xs={2}  lg={0.5}>
               <CreateOutlinedIcon sx={{ mt: 1 }} style={{ color: "#6A6A6A" }} />
             </Grid>
-            <Grid item lg={8}>
+            <Grid item xs={10} lg={8}>
               <TextField
                 sx={textFieldStyle}
                 size="small"
@@ -718,14 +718,14 @@ const BasicTabs = () => {
               ></TextField>
             </Grid>
           </Grid>
-          <Grid item lg={10} display={"flex"} marginTop={2}>
-            <Grid item lg={0.5}>
+          <Grid item xs={12} lg={10} display={"flex"} marginTop={2}>
+            <Grid item xs={2}  lg={0.5}>
               <WorkOutlineOutlinedIcon
                 sx={{ mt: 1 }}
                 style={{ color: "#6A6A6A" }}
               />
             </Grid>
-            <Grid item lg={8}>
+            <Grid item xs={10}  lg={8}>
               <Autocomplete
                 options={jobOptions}
                 value={selectedJob}
@@ -741,11 +741,11 @@ const BasicTabs = () => {
               />
             </Grid>
           </Grid>
-          <Grid item lg={10} display={"flex"} marginTop={2}>
-            <Grid item lg={0.5}>
+          <Grid item xs={12} lg={10} display={"flex"} marginTop={2}>
+            <Grid item xs={2} lg={0.5}>
               <PersonAddAltIcon sx={{ mt: 1 }} style={{ color: "#6A6A6A" }} />
             </Grid>
-            <Grid item lg={8}>
+            <Grid item xs={10} lg={8}>
               <Autocomplete
                 options={Candidates}
                 value={selectedCandidate}
@@ -761,7 +761,7 @@ const BasicTabs = () => {
               />
             </Grid>
           </Grid>
-          <Grid item lg={10} display={"flex"} marginTop={2}>
+          <Grid item xs={12} lg={10} display={"flex"} marginTop={2}>
             <Grid item lg={0.5}>
               <MoreTimeOutlinedIcon
                 sx={{ mt: 1 }}
@@ -911,7 +911,7 @@ const BasicTabs = () => {
             </Grid>
           </Grid>
 
-          <Grid item lg={10} display={"flex"} marginTop={2}>
+          <Grid item xs={12}lg={10} display={"flex"} marginTop={2}>
             <Grid item lg={0.5}>
               <PersonAddAltIcon sx={{ mt: 1 }} style={{ color: "#6A6A6A" }} />
             </Grid>
@@ -932,7 +932,7 @@ const BasicTabs = () => {
             </Grid>
           </Grid>
 
-          <Grid item lg={10} display={"flex"} marginTop={2}>
+          <Grid item xs={12} lg={10} display={"flex"} marginTop={2}>
             <Grid item lg={0.5}></Grid>
             <Grid item lg={8}>
               <Typography fontSize={"12px"} fontWeight={"bold"}>
@@ -974,9 +974,8 @@ const BasicTabs = () => {
               </Button>
             </Grid>
           </Grid>
-          <Grid
-            item
-            lg={7}
+          <Grid item lg={7}
+            
             display={"flex"}
             flexDirection={"row"}
             justifyContent={"space-between"}
